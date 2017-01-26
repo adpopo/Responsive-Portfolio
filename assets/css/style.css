@@ -3,7 +3,7 @@ body {
   font-size: 18px;
   color: #777;
   line-height: 34px;
-  background: url("../images/concrete_seamless.png");
+  background-color: #F0F2EB;
 }
 
 * {
@@ -18,19 +18,6 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 960px;
-}
-
-.footer {
-   width: 100%;
-  height: 20px;
-  font-size: 10pt;
-  padding: 10px;
-  text-align: center;
-  background-attachment: scroll;
-  background-position: 0% 0%;
-  position: fixed;
-  bottom: 0pt;
-  left: 0pt;
 }
 
 h1,
@@ -48,7 +35,7 @@ h1,
 h2,
 h3 {
   font-family: 'Georgia', Times, Times New Roman, serif;
-  color: #4aaaa5;
+  color: #FF4242;
   font-weight: 700;
 }
 
@@ -89,7 +76,7 @@ h3 {
   font-weight: 700;
   font-size: 30px;
   text-decoration: none;
-  background: #4aaaa5;
+  background: #FF4242;
 }
 
 nav {
@@ -101,7 +88,7 @@ nav a {
   display: inline-block;
   margin-left: 15px;
   padding-left: 15px;
-  color: #999;
+  color: #FF4242;
   text-decoration: none;
   line-height: 18px;
   border-left: 1px solid #efefef;
@@ -111,18 +98,20 @@ nav a:first-child {
   border-left: 0 none;
 }
 
-
-/*footer*/
-
-footer {
-  padding: 30px 0;
-  clear: both;
+footer{
+  clear:both;
+  background-color: #FF4242;
   color: #fff;
-  color: #ccc;
-  font-size: 12px;
+  width: 100%;
+  height: 55px;
+  font-size: 10pt;
+  padding: 10px;
   text-align: center;
-  background: #666;
-  border-top: 8px solid #4aaaa5;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  position: fixed;
+  bottom: 0pt;
+  left: 0pt;
 }
 
 
@@ -161,7 +150,7 @@ h3,
 /*main*/
 
 #main-container {
-  padding-top: 130px;
+  padding-top: 110px;
 }
 
 .main-section {
@@ -205,7 +194,7 @@ h3,
   text-align: center;
   line-height: 30px;
   font-weight: 300;
-  background: #4aaaa5;
+  background: #FF4242;
   border-bottom: 0;
 }
 
@@ -254,6 +243,71 @@ input[type=submit] {
   color: #fff;
   font-size: 18px;
   cursor: pointer;
-  background: #4aaaa5;
+  background: #FF4242;
   border: 0 none;
+}
+
+@media screen and (max-width: 768px) {
+  #main-container{
+    clear: both;
+    display: inline-block;
+    text-align: center;
+    padding-top: 80px;
+  }
+  .main-section{
+    clear:both;
+    text-align: left;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 3%;
+    width: 94%;
+    max-width: 100%;
+
+  }
+  .sidebar{
+    clear:both;
+    text-align: left;
+    display: inline-block;
+    margin-top: 0px;
+    width: 94%;
+    max-width: 100%;
+    margin-bottom: 100px;
+    margin-left: 3%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #masthead{
+    display: static;
+  }
+  #logo{
+    width: 100%;
+  }
+  nav{
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+  nav a{
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  #main-container{
+    padding-top:110px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+  nav{
+    margin-right: 5%;
+    }
+  .main-section{
+    width: 60%;
+    margin-left: 3%;
+  }
+  .sidebar{
+    width: 33%;
+    margin-right: 3%;
+  }
 }
